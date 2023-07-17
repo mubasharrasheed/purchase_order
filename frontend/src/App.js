@@ -33,7 +33,7 @@ const App = () => {
             formData.append("file", values.file);
 
             const result = await axios.post(
-              procces.env.REACT_APP_API_URL,
+              "http://localhost:4000/order",
               formData
             );
             setloading(false);
@@ -75,7 +75,7 @@ const App = () => {
             </div>
             <div className="row">
               <button type="submit" disabled={loading}>
-                Submit
+                {!loading ? "Submit" : <div className="loader"></div>}
               </button>
             </div>
           </Form>

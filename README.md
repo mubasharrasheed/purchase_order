@@ -26,6 +26,7 @@ Add backend path in .env
 To run in Development mode 
 ### `npm start`
 
+**After submiting the form you have to wait for the 10 sec for CSV processing time**
 
 ## Step -3
 To Run in Production mode
